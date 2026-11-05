@@ -1,0 +1,21 @@
+{
+  "name": "weather-watch",
+  "version": "0.1.0",
+  "private": false,
+  "description": "抓气象台预警与实时天气，产出 pending 队列交给你的 agent",
+  "type": "module",
+  "main": "weather-watch.mjs",
+  "bin": {
+    "weather-watch": "weather-watch.mjs"
+  },
+  "scripts": {},
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "agent",
+    "automation"
+  ]
+}

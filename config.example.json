@@ -1,0 +1,18 @@
+{
+  "_说明": "把这份复制成 config.json 再改。所有字段都有默认值，不改也能跑（默认北京海淀）。",
+
+  "place": {
+    "city": "北京",
+    "district": "海淀",
+    "province": "北京市",
+    "lat": 39.96,
+    "lon": 116.30
+  },
+  "_place": "city/district 用于匹配预警标题；province 会拼进气象台 URL（脚本里已做 URL 编码）；lat/lon 给 open-meteo。",
+
+  "nearby": ["昌平", "朝阳", "东城", "西城", "丰台", "石景山", "门头沟", "房山", "通州", "顺义", "大兴", "怀柔", "平谷", "密云", "延庆"],
+  "_nearby": "这些地方发的预警只记进 latest，不进 pending（避免噪音）。换成你所在城市的邻县/区即可。",
+
+  "stateDir": "./state",
+  "_stateDir": "两个 json 落哪儿。也可以设环境变量 WEATHER_STATE_DIR 覆盖。"
+}
